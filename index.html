@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic document setup -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>NovaMart | Home</title>
+
+  <!-- Bootstrap CSS for responsive layout and ready-made components -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body data-page="home">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">NovaMart</a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#mainNavbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="shop.html">Shop</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="cart.html">
+              Cart
+              <span id="cartCount" class="badge bg-warning text-dark">0</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero section -->
+  <header class="hero-section">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-6">
+          <p class="hero-badge">Final Capstone Project</p>
+
+          <h1 class="display-5 fw-bold">
+            Shop smart with a clean e-commerce experience.
+          </h1>
+
+          <p class="lead text-muted">
+            NovaMart is a responsive e-commerce website with product search,
+            filters, sorting, cart functionality, and checkout validation.
+          </p>
+
+          <div class="d-flex gap-3 flex-wrap">
+            <a href="shop.html" class="btn btn-primary btn-lg">Start Shopping</a>
+            <a href="cart.html" class="btn btn-outline-dark btn-lg">View Cart</a>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="hero-card">
+            <div class="hero-icon">🛒</div>
+            <h3>Modern Shopping UI</h3>
+            <p>
+              Built using HTML, CSS, Bootstrap, JavaScript, and localStorage.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Features section -->
+  <section class="section-padding bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Project Features</h2>
+        <p class="text-muted">Everything required for the final capstone task.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="feature-box">
+            <div class="feature-icon">🔎</div>
+            <h4>Search & Filter</h4>
+            <p>
+              Users can search products, filter by category, and sort by price,
+              name, or rating.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="feature-box">
+            <div class="feature-icon">🧺</div>
+            <h4>Full Cart System</h4>
+            <p>
+              Add, remove, and update quantity. Cart data is saved using
+              localStorage.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="feature-box">
+            <div class="feature-icon">✅</div>
+            <h4>Checkout Validation</h4>
+            <p>
+              Checkout form validates customer name, email, phone, address,
+              city, and postal code.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured products section -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+          <h2 class="fw-bold">Featured Products</h2>
+          <p class="text-muted mb-0">A few popular items from the shop.</p>
+        </div>
+
+        <a href="shop.html" class="btn btn-outline-primary">View All</a>
+      </div>
+
+      <!-- Products will be inserted here by JavaScript -->
+      <div id="featuredGrid" class="row g-4"></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer bg-dark text-white text-center py-4">
+    <div class="container">
+      <p class="mb-1">&copy; 2026 NovaMart. All rights reserved.</p>
+      <small>Qwetrum Web Development Internship Capstone Project</small>
+    </div>
+  </footer>
+
+  <!-- Product data file must load before main.js -->
+  <script src="assets/js/products.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <!-- Bootstrap JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
