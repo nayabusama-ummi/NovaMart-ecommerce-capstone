@@ -4,7 +4,7 @@ NovaMart is a complete multi-page e-commerce website built as the final capstone
 
 ## Live Demo
 
-Live Website: PASTE_LIVE_WEBSITE_LINK_HERE
+Live Website: (https://nayabusama-ummi.github.io/NovaMart-ecommerce-capstone/)
 
 ## GitHub Repository
 
